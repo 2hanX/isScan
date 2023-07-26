@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.isscan.controllers.CheckAV">
+    <children>
+        <TextArea fx:id="av_process" focusTraversable="false" promptText="输入 tasklist /svc 执行结果" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="30" />
+        <Button fx:id="av_button" text="点击识别" onMouseClicked="#CheckAVRun" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="225.0" />
+        <TextArea fx:id="av_result" focusTraversable="false" promptText="识别结果" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50" AnchorPane.rightAnchor="50" AnchorPane.topAnchor="255.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.isscan.controllers.PaneController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <HBox fx:id="verify" layoutY="92.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0">
+        <children>
+            <Label alignment="CENTER" text="输入网址" textAlignment="CENTER"></Label>
+            <TextField fx:id="inputURL" prefWidth="300.0" />
+            <Button mnemonicParsing="false" onAction="#Check" text="检测" />
+            <Button mnemonicParsing="false" onAction="#Clear" text="清除" />
+            <TextArea fx:id="extractedURLs" layoutX="40.0" layoutY="227.0" prefHeight="117.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="227.0" />
+        </children>
+    </HBox>
+
+</AnchorPane>

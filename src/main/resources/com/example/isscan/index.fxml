@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.isscan.Main">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="229.0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+        <menus>
+          <Menu mnemonicParsing="false" text="项目">
+            <items>
+              <MenuItem mnemonicParsing="false" text="保存" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="配置">
+            <items>
+              <MenuItem mnemonicParsing="false" text="修改" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="帮助">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#About" text="关于" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane fx:id="tp" layoutY="28.0" onMouseClicked="#Good" prefHeight="40.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <tabs>
+           <Tab fx:id="1" text="验证">
+           </Tab>
+          <Tab fx:id="2" text="杀软识别">
+          </Tab>
+          <Tab fx:id="3" text="reshell生成">
+          </Tab>
+        </tabs>
+      </TabPane>
+         </children>
+</AnchorPane>
